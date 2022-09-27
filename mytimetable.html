@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <title>Time Table </title>
+        <style>
+        
+        td:hover {background-color: rgb(255, 47, 47);}
+
+        td{
+			border: 1px solid blue;
+			width: 150px;
+			background-color: rgb(57, 252, 8);
+			text-align:  center;
+		}
+
+        th:hover {background-color: rgb(47, 68, 255);}
+
+        th{
+			border: 2px solid black;
+			font-weight: bold;
+			background-color: lightskyblue;
+		}
+
+		table{
+			caption-side: top;
+			table-layout: auto;
+			border-spacing: 2px;
+            width: 75%;
+		}
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h7 
+        {
+            font-size: 20px;
+            background-color: lightblue;
+            color: black;
+            padding: 10px;
+            align-self: center;
+                
+        }
+
+         h7:hover {
+            text-decoration: underline;
+            background-color: rgb(212, 248, 10);
+        }
+
+        footer {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p1 {
+            font-size: 25px;
+            background-color: lightblue;
+            width: 100%;
+            color: black;
+            padding: 2px;
+                
+        }
+
+
+
+        </style>
+    </head>
+    <body style="background-color:rgb(247, 165, 14);">
+        <h7><a href="index.html" style = "text-decoration: none;" > Home </a> </h7>
+        <h7><a href="mytimetable.html" style = "text-decoration: none;" >TimeTable</a>  </h7>
+        <h7><a href="coursevideos.html" style = "text-decoration: none;" > Course Videos</a></h7>
+
+        <br>
+        <br>
+        <br>
+
+        <table id="data_table" border = "5">
+            <tr>
+                <th colspan="7"  style = "text-align: center;">Timining</th>
+            </tr>
+
+            <tr>
+                <th style = "text-align: center;">Days</th>
+                <th style = "text-align: center;">8:30-9:50</th>
+                <th style = "text-align: center;">10:00-11:20</th>
+                <th style = "text-align: center;">11:30-12:50</th>
+                <th style = "text-align: center;">1:00-2:20</th>
+                <th style = "text-align: center;">2:30-3:50</th>
+                <th style = "text-align: center;">3:55-5:15</th>
+            </tr>
+
+            <tr id = "row1">
+                <th id = "col1_row1" rowspan="2" style = "text-align: center;"> Monday </th>
+                <td id = "col2_row1" rowspan="2"></td>
+                <td id = "col3_row1" rowspan="2"></td>
+                <td id = "col4_row1" rowspan="2" style = "text-align: center;">Data Mining </td>
+                <td id = "col5_row1" rowspan="2" style = "text-align: center;">Parallel and Distributed Computing</td>
+                <td id = "col6_row1" rowspan="2"></td>
+                <td id = "col7_row1" rowspan="2" style = "text-align: center;">COAL</td>
+
+                <td>
+                    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                </td>
+
+            </tr>
+
+            <tr></tr>
+
+            <tr id = "row2">
+                <th id = "col1_row2" rowspan="2" style = "text-align: center;"> Tuesday </th>
+                <td id = "col2_row2" rowspan="2"></td>
+                <td id = "col3_row2" rowspan="2"></td>
+                <td id = "col4_row2" rowspan="2"></td>
+                <td id = "col5_row2" rowspan="2" style = "text-align: center;">Web Programming</td>
+                <td id = "col6_row2" rowspan="2"></td>
+                <td id = "col7_row2" rowspan="2"></td>
+
+                <td>
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                </td>
+
+            </tr>
+
+            <tr></tr>
+
+            <tr id = "row3">
+                <th id = "col1_row3" rowspan="2" style = "text-align: center;"> Wednesday </th>
+                <td id = "col2_row3" rowspan="2"></td>
+                <td id = "col3_row3" rowspan="2" style = "text-align: center;">Data Mining</td>
+                <td id = "col4_row3" rowspan="2"></td>
+                <td id = "col5_row3" rowspan="2" style = "text-align: center;">Parallel and Distributed Computing</td>
+                <td id = "col6_row3" rowspan="2" style = "text-align: center;">Artificial Intelligence</td>
+                <td id = "col7_row3" rowspan="2" style = "text-align: center;">COAL</td>
+
+                <td>
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                </td>
+
+            </tr>
+
+            <tr></tr>
+
+
+            <tr id = "row4">
+                <th id = "col1_row4" rowspan="2" style = "text-align: center;"> Thursday </th>
+                <td id = "col2_row4" rowspan="2" colspan="2" style = "text-align: center;">Data Mining Lab</td>
+                <td id = "col3_row4" rowspan="2" style = "text-align: center;">Web Programming</td>
+                <td id = "col4_row4" rowspan="2"> </td>
+                <td id = "col5_row4" rowspan="2" style = "text-align: center;">Artificial Intelligence</td>
+                <td id = "col6_row4" rowspan="2"></td>
+
+                <td>
+                    <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                     <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+                </td>
+
+            </tr>
+
+            <tr></tr>
+
+            <tr id = "row5">
+                <th id = "col1_row5" rowspan="2" style = "text-align: center;"> Friday </th>
+                <td id = "col2_row5" rowspan="2" colspan="2" style = "text-align: center;">Artificial Intelligence Lab</td>
+                <td id = "col3_row5" rowspan="2"></td>
+                <td id = "col4_row5" rowspan="2"> Jumma Prayer</td>
+                <td id = "col5_row5" rowspan="2" colspan="2" style = "text-align: center;">COAL Lab</td>
+
+                <td>
+                    <input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+                    <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('5')">
+                </td>
+
+            </tr>
+
+            <tr></tr>
+
+
+            <tr>
+                <th> <input type="text" id="new_col1_row" name="new_col1_row" style="text-align: center;" ALIGN ="center"> </th>
+                <td> <input type="text" id="new_col2_row" name="new_col2_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td> <input type="text" id="new_col3_row" name="new_col3_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td> <input type="text" id="new_col4_row" name="new_col4_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td> <input type="text" id="new_col5_row" name="new_col5_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td> <input type="text" id="new_col6_row" name="new_col6_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td> <input type="text" id="new_col7_row" name="new_col7_row" style="text-align: center;" ALIGN ="center"> </td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+
+                
+            </tr>
+
+
+
+
+        </table>
+
+   
+
+        <script src="script.js"></script>
+    </body>
+
+    <footer>
+        <p1>Created by Jiyad Khan. © 2022</p1>
+    </footer>
+    
+</html>
