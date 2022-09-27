@@ -1,5 +1,5 @@
 # Portfolio-Website
-# Courses
+# Course
 CS4032 Web Programming
 # Objective
 1. Learn to make web pages with basic html and html5 and apply css and css3 on web pages. <br />
