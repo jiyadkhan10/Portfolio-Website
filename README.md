@@ -11,7 +11,7 @@ For this assignment you must create few web documents (in HTML) and three styles
 index.html – a page describing your portfolio. <br />
 mytimetable.html – a page displaying your current semester timetable in tables. <br />
 coursevideos.html – a page displaying 6 videos of html and css. <br />
-# LanguageS
+# Languages
 1. HTML <br />
 2. CSS <br />
 # Note
