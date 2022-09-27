@@ -1,4 +1,6 @@
 # Portfolio-Website
+# Courses
+CS4032 Web Programming
 # Objective
 1. Learn to make web pages with basic html and html5 and apply css and css3 on web pages. <br />
 2. Learn to make responsive pages <br />
@@ -9,7 +11,7 @@ For this assignment you must create few web documents (in HTML) and three styles
 index.html – a page describing your portfolio. <br />
 mytimetable.html – a page displaying your current semester timetable in tables. <br />
 coursevideos.html – a page displaying 6 videos of html and css. <br />
-# Language
+# LanguageS
 1. HTML <br />
 2. CSS <br />
 # Note
