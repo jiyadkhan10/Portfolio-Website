@@ -30,7 +30,7 @@ function validateForm() {
         alert("Please! Select CheckBoxe(s).");
         return false;
       } 
-
+	
       var z = document.getElementById("project_description").value;
       if (z == ""){
         alert("Please! Enter your Project Description");
